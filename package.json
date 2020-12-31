@@ -4,21 +4,19 @@
   "main": "index.js",
   "repository": "https://github.com/gabrielseron/typescript-api-imie.git",
   "license": "MIT",
-  "scripts":
-  {
+  "scripts": {
     "build": "tsc",
     "start": "node ./dist/index.js",
     "debug": "nodemon --watch src ./index.ts --exec ts-node ./index.ts"
   },
-  "dependencies":
-  {
+  "dependencies": {
     "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "stripe": "^8.129.0"
   },
-  "devDependencies":
-  {
+  "devDependencies": {
     "@types/bcrypt": "^3.0.0",
     "@types/body-parser": "^1.19.0",
     "@types/cors": "^2.8.9",
