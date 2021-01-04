@@ -1,0 +1,89 @@
+// List of all errors / messages / error codes
+
+Login [post]
+
+Donnée manquante - 400 Email/password manquants
+Password erroné / Email inconnu - 400 Un compte utilisant cette adresse est déja enregistré
+Trop de tentatives - sur email - 429 Trop de tentatives sur l'email _________ (max 5) - veuillez patienter (2min)
+
+
+Register [post]
+
+Donnée manquante - 400 Une ou plusieurs données obligatoires sont manquantes
+Donnée non-conforme - 409 Une ou plusieurs données sont erronées
+Email existe - 409 Un compte utilisant cette adresse mail est déja enregistré
+Password erroné/Email inconnu - 400 Email/password incorrect
+
+
+Subscription [put]
+
+Token erroné - 401 Votre token n'est pas correct
+Payement echoué - 402 Echec du payement de l'offre
+Droit d'accès - 403 Vos droits d'accès ne permettent pas d'accéder à la ressource
+Carte erronée/incomplète - 403 Veuillez compléter votre profil avec une crate de crédit
+Donnée format eroné - 409 L'offre n'est pas accessible
+
+
+User [put]
+
+Token erroné - 401 Votre token n'est pas correct
+Donnée non-conforme - 409 Une ou plusieurs données sont erronées
+
+
+User off [delete]
+
+Token erroné - 401 Votre token n'est pas correct
+
+
+User child [post]
+
+Donnée manquante - 400 Une ou plusieurs données obligatoires sont manquantes
+Droit d'accès - 403 Vos droits d'accès ne permettent pas d'accéder à la ressource
+Donnée non-conforme - 409 Une ou plusieurs données sont erronées
+Email existe - 409 Un compte utilisant cette adresse mail est déja enregistré
+Nombre d'enfants limité - 409 Vous avez dépassé le cota de trois enfants
+
+
+User child [delete]
+
+Token erroné - 401 Votre token n'est pas correct
+Droit d'accès - 403 Vos droits d'accès ne permettent pas d'accéder à la ressource
+id child incorrect/invalide - 403 Vous ne pouvez pas supprimer cet enfant
+
+
+User child [get]
+
+Donnée manquante - 400 Une ou plusieurs données obligatoires sont manquantes
+Droit d'accès - 403 Vos droits d'accès ne permettent pas d'accéder à la ressource
+Donnée non-conforme - 409 Une ou plusieurs données sont erronées
+
+
+User cart [put]
+
+Token erroné - 401 Votre token n'est pas correct
+Carte fail - 402 Informations bancaire incorrectes
+Carte existe - 409 La carte existe déja
+Droit d'accès - 403 Vos droits d'accès ne permettent pas d'accéder à la ressource
+Donnée non-conforme - 409 Une ou plusieurs données sont erronées
+
+
+User [del]
+
+Token erroné - 401 Votre token n'est pas correct
+
+
+Songs [get]
+
+Token erroné - 401 Votre token n'est pas correct
+Droits d'accès abonnement - 403 Votre abonnement ne permet pas d'accéder à la ressource
+
+
+Songs id [get]
+
+Donnée format erroné 409 L'audio n'est pas accessible
+Droits d'accès abonnement - 403 Votre abonnement ne permet pas d'accéder à la ressource
+
+
+Bills [get]
+
+Droit d'accès - 403 Vos droits d'accès ne permettent pas d'accéder à la ressource

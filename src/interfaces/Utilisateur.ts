@@ -6,5 +6,5 @@ export interface UtilisateurInterfaces
     email : string;
     mdp : string;
     date_Naiss : Date;
-    sexe : boolean;
+    sexe : string;
 }
