@@ -22,11 +22,13 @@ export const authMidd = (req: Request, res: Response, next: () => void) => {
 
 }
 
-export const registerMidd = (req: Request, res: Response, next: () => void) => {
+export const registerMidd = (req: Request, res: Response, next: () => void) => 
+{
 
     let data: any = req.body;
 
     const champsRequire = [`firstname`, `lastname`, `email`, `password`, `date_naissance`, `sexe`]
+
 
     let errorCode : number = 0;
     
